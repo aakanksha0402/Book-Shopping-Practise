@@ -1,0 +1,5 @@
+<h1>Hello <%= @admin_details.name %></h1>
+It's <%= Time.now %>
+We have <%= pluralize(@total_orders, "order") %>.<br>
+
+<%= link_to 'Add New Admin', new_administrator_path %>

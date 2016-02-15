@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookShopping</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="back_for_store">
+  <div>
+    <div style="Float:Left;"><%= image_tag("logo.jpg", size: "60x50") %></div>
+    <div><p style="font-size:42px"><b>Product Catalog</b></p></div>
+  </div>
+  <hr>
+
+  <div style="float:left; width:250px; background-color:#66aa99;">
+    <div id="cart"><%= render @cart %>
+    </div>
+    <div>
+      <ul>
+        <li class="li"><a href="#">Home</a></li>
+        <li class="li"><a href="#">View Books</a></li>
+        <li class="li"><a href="#">Gallery</a></li>
+        <li class="li"><a href="#">About Us</a></li>
+        <li class="li"><a href="#">Contact Us</a></li>
+      </ul>
+      <% if session[:admin_id] %>
+      <ul>
+        <li class="li"><%= link_to 'Home', '/administrators/welcome' %></li>
+        <li class="li"><%= link_to 'View Orders', orders_path %></li>
+        <li class="li"><%= link_to 'View Products', products_path %></li>
+        <li class="li"><%= link_to 'View Users', administrators_path %></li>
+        <li class="li"><%= link_to "Sign Out", sessions_destroy_path, method: :delete %></li>
+      </ul>
+      <% end %>
+    </div>
+  </div>
+
+  <div style="margin-left:300px;">
+    <%= yield %></div>
+  </div>
+</body>
+</html>
