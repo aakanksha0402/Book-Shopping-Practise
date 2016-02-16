@@ -1,4 +1,5 @@
 BookShopping::Application.routes.draw do
+  get '/login' => 'session#new'
   get '/administrators/welcome' => 'administrators#welcome'
   resources :administrators
   # post 'administrators/welcome'
