@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:admin_id] = admin.id
       redirect_to '/administrators/welcome'
     else
-      redirect_to sessions_new_path
+      redirect_to '/'
     end
   end
 
