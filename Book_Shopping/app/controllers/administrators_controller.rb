@@ -6,8 +6,6 @@ class AdministratorsController < ApplicationController
 
   def index
     @administrators = Administrator.all
-    @total_orders = Order.count
-
   end
 
   def show
@@ -34,7 +32,6 @@ class AdministratorsController < ApplicationController
     end
   end
 
-
   def update
     respond_to do |format|
       if @administrator.update(administrator_params)
@@ -47,7 +44,6 @@ class AdministratorsController < ApplicationController
     end
   end
 
-
   def destroy
     @administrator.destroy
     respond_to do |format|
@@ -57,8 +53,9 @@ class AdministratorsController < ApplicationController
   end
 
   def welcome
-
+    @total_orders = Order.count
   end
+  
   private
     def set_administrator
       @administrator = Administrator.find(params[:id])
