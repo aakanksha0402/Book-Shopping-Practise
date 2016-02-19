@@ -1,0 +1,3 @@
+class SettingsForLocaleController < ApplicationController
+  
+end

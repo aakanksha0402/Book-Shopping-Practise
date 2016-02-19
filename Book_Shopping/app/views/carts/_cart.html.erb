@@ -1,0 +1,26 @@
+<% unless cart.line_items.empty? %>
+<h2><%= t('cart.title') %></h2>
+<table border="1px">
+  <tr>
+    <th><%= t('cart.items') %></th>
+    <th><%= t('cart.quantity') %></th>
+    <th><%= t('cart.price') %></th>
+    <th><%= t('cart.total_price') %></th>
+  </tr>
+<%= render cart.line_items %>
+  <tr>
+    <th colspan="3">Sum Total</th>
+    <th><%= number_to_currency(@cart.total_price, unit: "Rs. ") %></th>
+  </tr>
+
+</table>
+<table>
+<tr>
+  <td><%= button_to t('cart.empty_cart'), @cart, method: :delete, data: {confirm: t('cart.confirm_to_empty')} %></td>
+</tr>
+<tr>
+    <td><%= button_to t('cart.check_out'), new_order_path, method: :get %></td>
+</tr>
+
+</table>
+<% end %>

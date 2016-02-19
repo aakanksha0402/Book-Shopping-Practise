@@ -1,0 +1,45 @@
+ru:
+  menu:
+    languages:
+      selection: "Выбрать язык: "
+      lang: "Язык"
+      ru: "Русский"
+      en: "Английский"
+      locale: "ru"
+
+  main_menu:
+    home: "Главная"
+    view_books: "Посмотреть Книги"
+    gallery: "Галерея"
+    about_us: "О нас"
+    contact_us: "Свяжитесь с нами"
+
+  cart:
+    items: "Ваши пункты"
+    product_name: "Продукт"
+    quantity: "Кол-во"
+    price: "Цена"
+    total_price: "Всего"
+    empty_cart: "Пустая корзина"
+    check_out: "Проверять, выписываться"
+    confirm_to_empty: "Вы уверены , чтобы очистить тележку ?"
+    notice_after_empty: "Корзина сейчас пуста."
+    title: "Ваши пункты"
+
+  order:
+    to_enter_detail: "Пожалуйста, введите свои данные"
+    name: "имя"
+    address: "Адрес"
+    email: "Адрес"
+    paytype: "Режим оплаты"
+    place_order: "Разместить заказ"
+    back_to_product: "назад"
+    sent_email: "Поздравления. Ваш заказ был успешным размещены ."
+    PAY_MODE:
+        cheque: "чек об оплате"
+        credit_card: "Кредитная карта"
+        purchase_order: "Заказ на покупку"
+        select_prompt: "Выберите режим оплаты"
+
+  product:
+    add_to_cart: "Добавить в корзину"

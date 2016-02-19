@@ -1,0 +1,45 @@
+en:
+  menu:
+    languages:
+      selection: "Select a Language: "
+      lang: "Language"
+      ru: "Russian"
+      en: "English"
+      locale: "en"
+
+  main_menu:
+    home: "Home"
+    view_books: "View Books"
+    gallery: "Gallery"
+    about_us: "About Us"
+    contact_us: "Contact Us"
+
+  cart:
+    items: "Your items are"
+    product_name: "Product"
+    quantity: "Qty."
+    price: "Price"
+    total_price: "Total"
+    empty_cart: "Empty Cart"
+    check_out: "Check Out"
+    confirm_to_empty: "Are You Sure to empty the cart?"
+    notice_after_empty: "The cart is empty now."
+    title: "Your items are"
+
+  order:
+    to_enter_detail: "Please enter your details"
+    name: "Name"
+    address: "Address"
+    email: "E-Mail"
+    paytype: "Mode of Payment"
+    place_order: "Place Order"
+    back_to_product: "Back"
+    sent_email: "Congratulations. Your order has been successfull placed."
+    PAY_MODE:
+        cheque: "Cheque"
+        credit_card: "Credit Card"
+        purchase_order: "Purchase Order"
+        select_prompt: "Select a payment mode"
+
+  product:
+    add_to_cart: "Add to Cart"

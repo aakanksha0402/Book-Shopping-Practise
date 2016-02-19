@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookShopping</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="back_for_store">
+  <!-- <div style="float:right">
+    <%= t('menu.languages.selection') %><%= link_to t('menu.languages.en'), default_url_options %>
+    <%= link_to t('menu.languages.ru'), default_url_options %>
+  </div> -->
+  <div>
+    <div style="Float:Left;"><%= image_tag("logo.jpg", size: "60x50") %></div>
+    <div><p style="font-size:42px"><b>Book Shopping</b></p></div>
+  </div>
+  <hr>
+
+  <div style="float:left; width:250px; background-color:#66aa99;">
+    <div id="cart"><%= render @cart %>
+    </div>
+    <div>
+      <ul>
+        <li><%= link_to t('main_menu.home') %></li>
+        <li><%= link_to t('main_menu.view_books') %></li>
+        <li><%= link_to t('main_menu.gallery') %></li>
+        <li><%= link_to t('main_menu.about_us') %></li>
+        <li><%= link_to t('main_menu.contact_us') %></li>
+      </ul>
+      <% if session[:admin_id] %>
+      <ul>
+        <li class="li"><%= link_to 'Home', '/administrators/welcome' %></li>
+        <li class="li"><%= link_to 'View Orders', orders_path %></li>
+        <li class="li"><%= link_to 'View Products', products_path %></li>
+        <li class="li"><%= link_to 'View Users', administrators_path %></li>
+        <li class="li"><%= link_to "Sign Out", sessions_destroy_path, method: :delete %></li>
+      </ul>
+      <% end %>
+    </div>
+  </div>
+
+  <div style="margin-left:300px;">
+    <%= yield %></div>
+  </div>
+</body>
+</html>

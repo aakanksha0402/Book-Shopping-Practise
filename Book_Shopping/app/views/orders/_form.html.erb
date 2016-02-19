@@ -1,0 +1,33 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t('order.name') %><br>
+    <%= f.text_area :name, maxlength: 30 %>
+  </div>
+  <div class="field">
+    <%= f.label t('order.address') %><br>
+    <%= f.text_area :address, rows:3, cols:40 %>
+  </div>
+  <div class="field">
+    <%= f.label t('order.email') %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label t('order.paytype') %><br>
+    <%= f.select :pay_type, t(Order::PAY_MODE, scope: 'order.PAY_MODE'),prompt: t('order.PAY_MODE.select_prompt') %>
+  </div>
+  <div class="actions">
+    <%= f.submit t('order.place_order')%>
+  </div>
+<% end %>

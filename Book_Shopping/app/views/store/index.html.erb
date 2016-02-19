@@ -1,0 +1,21 @@
+
+<div>
+<%= flash[:notice] %>
+<% cache ['all' , Product.ordered] do %>
+  <% @product.each do |product| %>
+  <div class="margin">
+    <% cache ['inside', product] do %>
+      <div style="Float:left">
+        <%= image_tag(product.image_url, size: "80x100") %>
+      </div>
+      <div style="margin-left:150px">
+        Title: <%= product.title %><br \>
+        Description: <%= product.description %><br \>
+        Price: <%= number_to_currency(product.price, unit: "₹ ") %>
+        <%= button_to t('product.add_to_cart'), line_items_path(product_id: product), remote: true%>
+      </div>
+    <% end %>
+  </div><hr class="margin">
+  <% end %>
+<% end %>
+</div>

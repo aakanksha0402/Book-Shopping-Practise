@@ -1,0 +1,2 @@
+module SettingsForLocaleHelper
+end
