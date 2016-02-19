@@ -43,3 +43,10 @@ en:
 
   product:
     add_to_cart: "Add to Cart"
+
+  views:
+    pagination:
+      first: "First"
+      last: "Last"
+      previous: "Previous"
+      next: "Next"

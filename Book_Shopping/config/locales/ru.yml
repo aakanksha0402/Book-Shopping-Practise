@@ -43,3 +43,10 @@ ru:
 
   product:
     add_to_cart: "Добавить в корзину"
+
+  views:
+    pagination:
+      first: "Первый"
+      last: "Последний"
+      previous: "предыдущий"
+      next: "следующий"

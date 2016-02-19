@@ -64,6 +64,7 @@ before_action :set_order, only: [:show, :edit, :update, :destroy]
     end
 
     def order_params
+      # I18n.locale = 'en'
       params.require(:order).permit(:name, :address, :email, :pay_type)
     end
 end
