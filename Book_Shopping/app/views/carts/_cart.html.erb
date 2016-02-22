@@ -10,7 +10,10 @@
 <%= render cart.line_items %>
   <tr>
     <th colspan="3">Sum Total</th>
-    <th><%= number_to_currency(@cart.total_price, unit: "Rs. ") %></th>
+    <th>
+      <% @total = number_to_currency(@cart.total_price, unit: "Rs. ") %>
+      <%= session[:tot] = @total %>
+      <%= @total %></th>
   </tr>
 
 </table>

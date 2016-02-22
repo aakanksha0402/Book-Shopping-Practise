@@ -30,4 +30,9 @@ class ApplicationController < ActionController::Base
   def authorize
   redirect_to '/' unless current_admin
   end
+
+  def cache_chck
+    response.headers["Cache-Control"] = "no-cache, no-store, max-age=0, must-revalidate"
+    response.headers["Pragma"] = "no-cache"
+  end
 end

@@ -1,0 +1,27 @@
+class PaymentsController < ApplicationController
+  include CreateCart
+  before_action :cart_assign
+
+  def index
+    @payments = Payment.all
+  end
+
+  def new
+    @payment = Payment.new
+  end
+
+  def create
+    @payment = Payment.new(payment_params)
+    if @payment.save
+      if @payment.process
+        redirect_to store_index_path, notice: "You have been successfully charged."
+      end
+      OrderNotifier.received(session[:email]).deliver
+    end
+  end
+
+  private
+  def payment_params
+    params.require(:payment).permit(:first_name, :last_name, :credit_card_number, :expiration_month, :expiration_year, :card_security_code, :amount)
+  end
+end

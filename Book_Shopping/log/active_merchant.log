@@ -1,0 +1,612 @@
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 515\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>1zwxvbvd13qzc2iapidy35bpvd04n4z0</Password><Transaction_Type>01</Transaction_Type><DollarAmount>2.00</DollarAmount><Currency>USD</Currency><Card_Number>4024007153820211</Card_Number><Expiry_Date>0217</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Visa</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 07:01:14 GMT\r\n"
+-> "ETag: \"a7b49843cc323e947ea096d5410782a6\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75749342\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 5b900cc3f9c98bc9a26e87ca2d23fec9\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "aea\r\n"
+reading 2794 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>2.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75749342</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET116617</Authorization_Num>\n  <Expiry_Date>0217</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000004</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>9974246</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Visa                    $ 2.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 02:01:15\nREFERENCE #     : 03 000004 M\nAUTHOR. #       : ET116617\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2794 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 362\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>1zwxvbvd13qzc2iapidy35bpvd04n4z0</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET116617</Authorization_Num><Transaction_Tag>75749342</Transaction_Tag><DollarAmount>2.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 07:01:16 GMT\r\n"
+-> "ETag: \"0786fe715a65f511f43d3746b67c5eee\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75749369\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: d0a27abc33502a13f5aef22dde1fa7e4\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "ae0\r\n"
+reading 2784 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>2.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75749369</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET191869</Authorization_Num>\n  <Expiry_Date>0217</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000004</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>6181496</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Visa                    $ 2.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 02:01:16\nREFERENCE #     : 03 000004 M\nAUTHOR. #       : ET191869\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2784 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 516\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>10.00</DollarAmount><Currency>USD</Currency><Card_Number>4024007153820211</Card_Number><Expiry_Date>0317</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Visa</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:50:49 GMT\r\n"
+-> "ETag: \"10e3f598f77ba4e07165bbb1aee57911\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75906383\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: e4a6233d9a57d524e5a7d6897f934448\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "3c0\r\n"
+reading 960 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>10.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75906383</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET122721</Authorization_Num>\n  <Expiry_Date>0317</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm"
+read 960 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "72b\r\n"
+reading 1835 bytes...
+-> ">\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000007</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>3081548</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Visa                   $ 10.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 05:50:49\nREFERENCE #     : 03 000007 M\nAUTHOR. #       : ET122721\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 1835 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET122721</Authorization_Num><Transaction_Tag>75906383</Transaction_Tag><DollarAmount>10.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:50:51 GMT\r\n"
+-> "ETag: \"c1ca37bd7ba88c0cab1066573158f125\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75906395\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: bc227ef42f0af82c4fe8ccc21ccba5ec\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "968\r\n"
+reading 2408 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>10.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75906395</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET191736</Authorization_Num>\n  <Expiry_Date>0317</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000007</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>6282500</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Visa                   $ 10.00 USD\n\nCARDHOLDER NAME : Aakanksha Sha"
+read 2408 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "179\r\n"
+reading 377 bytes...
+-> "rma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 05:50:51\nREFERENCE #     : 03 000007 M\nAUTHOR. #       : ET191736\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 377 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 516\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>10.00</DollarAmount><Currency>USD</Currency><Card_Number>4024007153820211</Card_Number><Expiry_Date>0317</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Visa</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:52:16 GMT\r\n"
+-> "ETag: \"a957ab07737e7a54d9c9341f6e04c50c\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75907451\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 7b7711bf9f896d00da615f7496fddd74\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "aeb\r\n"
+reading 2795 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>10.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75907451</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET134296</Authorization_Num>\n  <Expiry_Date>0317</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000008</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>4895729</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Visa                   $ 10.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 05:52:16\nREFERENCE #     : 03 000008 M\nAUTHOR. #       : ET134296\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2795 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET134296</Authorization_Num><Transaction_Tag>75907451</Transaction_Tag><DollarAmount>10.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:52:18 GMT\r\n"
+-> "ETag: \"dc6b1e02f3ac6fd49fe6f412bea567bf\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75907478\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: effeace5ef3915dbd65012cff61614cf\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "Content-Length: 2785\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+reading 2785 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>10.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############0211</Card_Number>\n  <Transaction_Tag>75907478</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET118642</Authorization_Num>\n  <Expiry_Date>0317</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000008</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>1223219</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Visa</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Visa                   $ 10.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############0211\nDATE/TIME       : 22 Feb 16 05:52:18\nREFERENCE #     : 03 000008 M\nAUTHOR. #       : ET118642\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2785 bytes
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 521\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>3.00</DollarAmount><Currency>USD</Currency><Card_Number>5536883256561714</Card_Number><Expiry_Date>0717</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Mastercard</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>212</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:57:02 GMT\r\n"
+-> "ETag: \"3f8969224f1b51989c9ac82018e1e84f\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75911252\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 96fe01ff7d231b4bc1c0b46721cd091e\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "af0\r\n"
+reading 2800 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>3.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75911252</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET154932</Authorization_Num>\n  <Expiry_Date>0717</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>212</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000009</SequenceNo>\n  <AVS></AVS>\n  <CVV2>N</CVV2>\n  <Retrieval_Ref_No>6773651</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Mastercard              $ 3.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 05:57:03\nREFERENCE #     : 03 000009 M\nAUTHOR. #       : ET154932\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2800 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 362\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET154932</Authorization_Num><Transaction_Tag>75911252</Transaction_Tag><DollarAmount>3.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:57:04 GMT\r\n"
+-> "ETag: \"44f1a283e6277ecc81cdf80dae9efaf2\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75911279\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 35539d9517afa3f2b2a0afcae82ad354\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "Content-Length: 2790\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+reading 2790 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>3.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75911279</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET140468</Authorization_Num>\n  <Expiry_Date>0717</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000009</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>3377184</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Mastercard              $ 3.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 05:57:04\nREFERENCE #     : 03 000009 M\nAUTHOR. #       : ET140468\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2790 bytes
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 521\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>3.00</DollarAmount><Currency>USD</Currency><Card_Number>5536883256561714</Card_Number><Expiry_Date>0717</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Mastercard</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>212</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:57:52 GMT\r\n"
+-> "ETag: \"6b58da6636507b55ed8814144eba1446\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75911981\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 94a7f4606340074ade687ebf870fd0ce\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "Content-Length: 2800\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+reading 2800 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>3.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75911981</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET181927</Authorization_Num>\n  <Expiry_Date>0717</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>212</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000010</SequenceNo>\n  <AVS></AVS>\n  <CVV2>N</CVV2>\n  <Retrieval_Ref_No>8886751</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Mastercard              $ 3.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 05:57:53\nREFERENCE #     : 03 000010 M\nAUTHOR. #       : ET181927\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2800 bytes
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 362\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET181927</Authorization_Num><Transaction_Tag>75911981</Transaction_Tag><DollarAmount>3.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 10:57:54 GMT\r\n"
+-> "ETag: \"e2dffe83781aea41cc132e8a3ebd957c\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75912011\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: b17f749ec8bc21d889fecdd84cc9852a\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "ae6\r\n"
+reading 2790 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>3.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75912011</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET144901</Authorization_Num>\n  <Expiry_Date>0717</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000010</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>6992100</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Mastercard              $ 3.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 05:57:54\nREFERENCE #     : 03 000010 M\nAUTHOR. #       : ET144901\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2790 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 522\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>23.00</DollarAmount><Currency>USD</Currency><Card_Number>5536883256561714</Card_Number><Expiry_Date>0418</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Mastercard</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:00:19 GMT\r\n"
+-> "ETag: \"009c72322faead202bd04106a02a2eaa\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75913883\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: ac538d753274195f9e9aefd74a13c453\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "af1\r\n"
+reading 2801 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>23.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75913883</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET145953</Authorization_Num>\n  <Expiry_Date>0418</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000011</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>3297535</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Mastercard             $ 23.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 06:00:20\nREFERENCE #     : 03 000011 M\nAUTHOR. #       : ET145953\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2801 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET145953</Authorization_Num><Transaction_Tag>75913883</Transaction_Tag><DollarAmount>23.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:00:21 GMT\r\n"
+-> "ETag: \"56d443fb8393009a44b393b44c2aef2b\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75913898\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: abac972de062e9e5f4ec7d8cc22ed9e6\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "968\r\n"
+reading 2408 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>23.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1714</Card_Number>\n  <Transaction_Tag>75913898</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET182708</Authorization_Num>\n  <Expiry_Date>0418</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000011</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>8715949</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Mastercard             $ 23.00 USD\n\nCARDHOLDER NAME : Aakanks"
+read 2408 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "17f\r\n"
+reading 383 bytes...
+-> "ha Sharma\nCARD NUMBER     : ############1714\nDATE/TIME       : 22 Feb 16 06:00:22\nREFERENCE #     : 03 000011 M\nAUTHOR. #       : ET182708\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 383 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 521\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>156.00</DollarAmount><Currency>USD</Currency><Card_Number>6011288274533723</Card_Number><Expiry_Date>0916</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Discover</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:11:21 GMT\r\n"
+-> "ETag: \"e6f3a1d1839d83885176aea311669453\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75921635\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 706cf556ea8cd27b82fd06e532693c45\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "968\r\n"
+reading 2408 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>156.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############3723</Card_Number>\n  <Transaction_Tag>75921635</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET199510</Authorization_Num>\n  <Expiry_Date>0916</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000017</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>4205035</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Discover</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Discover              $ 156.00 USD\n\nCARDHOLDER NAME "
+read 2408 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "188\r\n"
+reading 392 bytes...
+-> ": Aakanksha Sharma\nCARD NUMBER     : ############3723\nDATE/TIME       : 22 Feb 16 06:11:21\nREFERENCE #     : 03 000017 M\nAUTHOR. #       : ET199510\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 392 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 364\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET199510</Authorization_Num><Transaction_Tag>75921635</Transaction_Tag><DollarAmount>156.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:11:23 GMT\r\n"
+-> "ETag: \"435ef56a21c194f086cf03b9fd26619f\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75921659\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: f253748fb1a5e41308fd0625d3902bda\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "968\r\n"
+reading 2408 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>156.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############3723</Card_Number>\n  <Transaction_Tag>75921659</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET107167</Authorization_Num>\n  <Expiry_Date>0916</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000017</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>9704168</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Discover</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Discover              $ 156.00 USD\n\nCARDHOLDER NAME : Aakanksh"
+read 2408 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "17e\r\n"
+reading 382 bytes...
+-> "a Sharma\nCARD NUMBER     : ############3723\nDATE/TIME       : 22 Feb 16 06:11:23\nREFERENCE #     : 03 000017 M\nAUTHOR. #       : ET107167\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 382 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 522\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>52.00</DollarAmount><Currency>USD</Currency><Card_Number>5166093561135553</Card_Number><Expiry_Date>0518</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Mastercard</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:40:26 GMT\r\n"
+-> "ETag: \"7b890effc683474a02fa58fb48d3c4d1\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75940769\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: a5cd9671c53ae4fd7fd74dbb2796400b\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "3c0\r\n"
+reading 960 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>52.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############5553</Card_Number>\n  <Transaction_Tag>75940769</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET175588</Authorization_Num>\n  <Expiry_Date>0518</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm"
+read 960 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "731\r\n"
+reading 1841 bytes...
+-> ">\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000026</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>3985559</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Mastercard             $ 52.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############5553\nDATE/TIME       : 22 Feb 16 06:40:27\nREFERENCE #     : 03 000026 M\nAUTHOR. #       : ET175588\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 1841 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET175588</Authorization_Num><Transaction_Tag>75940769</Transaction_Tag><DollarAmount>52.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:40:29 GMT\r\n"
+-> "ETag: \"d93cf8d7a6a2e75aa6f32ae22ea198b5\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75940781\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 13ac78ac7395ffcd7d40973ba4e4dd14\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "ae7\r\n"
+reading 2791 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>52.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############5553</Card_Number>\n  <Transaction_Tag>75940781</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET174147</Authorization_Num>\n  <Expiry_Date>0518</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000026</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>3244844</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Mastercard             $ 52.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############5553\nDATE/TIME       : 22 Feb 16 06:40:30\nREFERENCE #     : 03 000026 M\nAUTHOR. #       : ET174147\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2791 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 522\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>52.00</DollarAmount><Currency>USD</Currency><Card_Number>5166093561135553</Card_Number><Expiry_Date>0518</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Mastercard</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:41:48 GMT\r\n"
+-> "ETag: \"719b7205b2643b153d2d5c40ebd6ab7f\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75941564\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: b2f3fa38a274efef78f356f81b051d4a\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "af1\r\n"
+reading 2801 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>52.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############5553</Card_Number>\n  <Transaction_Tag>75941564</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET130280</Authorization_Num>\n  <Expiry_Date>0518</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000027</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>5300008</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Mastercard             $ 52.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############5553\nDATE/TIME       : 22 Feb 16 06:41:49\nREFERENCE #     : 03 000027 M\nAUTHOR. #       : ET130280\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2801 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET130280</Authorization_Num><Transaction_Tag>75941564</Transaction_Tag><DollarAmount>52.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:41:55 GMT\r\n"
+-> "ETag: \"b7e73a51c83afd0a6da683b482b4468f\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75941624\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 9beb3bc9558105d20a2d39edebcdb941\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "Content-Length: 2791\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+reading 2791 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>52.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############5553</Card_Number>\n  <Transaction_Tag>75941624</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET111587</Authorization_Num>\n  <Expiry_Date>0518</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000027</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>0471956</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Mastercard</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Mastercard             $ 52.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############5553\nDATE/TIME       : 22 Feb 16 06:41:56\nREFERENCE #     : 03 000027 M\nAUTHOR. #       : ET111587\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2791 bytes
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 520\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>01</Transaction_Type><DollarAmount>50.00</DollarAmount><Currency>USD</Currency><Card_Number>6011493532221943</Card_Number><Expiry_Date>0318</Expiry_Date><CardHoldersName>Aakanksha Sharma</CardHoldersName><CardType>Discover</CardType><CVD_Presence_Ind>1</CVD_Presence_Ind><VerificationStr2>123</VerificationStr2><Reference_No/><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:51:31 GMT\r\n"
+-> "ETag: \"1f47064b8b153bbf331011b208dd8a5e\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75947963\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: ef19513c688080b3d58db7c53c65de8c\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "transfer-encoding: chunked\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+-> "aef\r\n"
+reading 2799 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>01</Transaction_Type>\n  <DollarAmount>50.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1943</Card_Number>\n  <Transaction_Tag>75947963</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET143714</Authorization_Num>\n  <Expiry_Date>0318</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2>123</VerificationStr2>\n  <CVD_Presence_Ind>1</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000028</SequenceNo>\n  <AVS></AVS>\n  <CVV2>M</CVV2>\n  <Retrieval_Ref_No>3938931</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Discover</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Pre-Authorization\n\nACCT: Discover               $ 50.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1943\nDATE/TIME       : 22 Feb 16 06:51:32\nREFERENCE #     : 03 000028 M\nAUTHOR. #       : ET143714\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2799 bytes
+reading 2 bytes...
+-> "\r\n"
+read 2 bytes
+-> "0\r\n"
+-> "\r\n"
+Conn close
+opening connection to api.demo.globalgatewaye4.firstdata.com:443...
+opened
+starting SSL for api.demo.globalgatewaye4.firstdata.com:443...
+SSL established
+<- "POST /transaction/v11 HTTP/1.1\r\nContent-Type: application/xml\r\nAccepts: application/xml\r\nAccept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3\r\nAccept: */*\r\nUser-Agent: Ruby\r\nConnection: close\r\nHost: api.demo.globalgatewaye4.firstdata.com\r\nContent-Length: 363\r\n\r\n"
+<- "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Transaction><ExactID>IB0566-48</ExactID><Password>w89f1665ojgnd5wz5wf32fsv38zifg9b</Password><Transaction_Type>32</Transaction_Type><Authorization_Num>ET143714</Authorization_Num><Transaction_Tag>75947963</Transaction_Tag><DollarAmount>50.00</DollarAmount><Currency>USD</Currency><CAVV/><XID/><Ecommerce_Flag/></Transaction>"
+-> "HTTP/1.1 201 Created\r\n"
+-> "Cache-Control: max-age=0, private, must-revalidate\r\n"
+-> "Content-Type: application/xml; charset=utf-8\r\n"
+-> "Date: Mon, 22 Feb 2016 11:51:33 GMT\r\n"
+-> "ETag: \"ca4c81f28215594ef31891514795152c\"\r\n"
+-> "Location: https://api.demo.globalgatewaye4.firstdata.com/transaction/v11/75947987\r\n"
+-> "Server: Apache\r\n"
+-> "Status: 201 Created\r\n"
+-> "X-Rack-Cache: invalidate, pass\r\n"
+-> "X-Request-Id: 014b7f10ae9951743a56fcb09171d8ac\r\n"
+-> "X-UA-Compatible: IE=Edge,chrome=1\r\n"
+-> "Content-Length: 2789\r\n"
+-> "Connection: Close\r\n"
+-> "\r\n"
+reading 2789 bytes...
+-> "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TransactionResult>\n  <ExactID>IB0566-48</ExactID>\n  <Password></Password>\n  <Transaction_Type>32</Transaction_Type>\n  <DollarAmount>50.0</DollarAmount>\n  <SurchargeAmount></SurchargeAmount>\n  <Card_Number>############1943</Card_Number>\n  <Transaction_Tag>75947987</Transaction_Tag>\n  <Track1></Track1>\n  <Track2></Track2>\n  <PAN></PAN>\n  <Authorization_Num>ET114463</Authorization_Num>\n  <Expiry_Date>0318</Expiry_Date>\n  <CardHoldersName>Aakanksha Sharma</CardHoldersName>\n  <VerificationStr1></VerificationStr1>\n  <VerificationStr2></VerificationStr2>\n  <CVD_Presence_Ind>0</CVD_Presence_Ind>\n  <ZipCode></ZipCode>\n  <Tax1Amount></Tax1Amount>\n  <Tax1Number></Tax1Number>\n  <Tax2Amount></Tax2Amount>\n  <Tax2Number></Tax2Number>\n  <Secure_AuthRequired></Secure_AuthRequired>\n  <Secure_AuthResult></Secure_AuthResult>\n  <Ecommerce_Flag></Ecommerce_Flag>\n  <XID></XID>\n  <CAVV></CAVV>\n  <CAVV_Algorithm></CAVV_Algorithm>\n  <Reference_No></Reference_No>\n  <Customer_Ref></Customer_Ref>\n  <Reference_3></Reference_3>\n  <Language></Language>\n  <Client_IP></Client_IP>\n  <Client_Email></Client_Email>\n  <User_Name></User_Name>\n  <Transaction_Error>false</Transaction_Error>\n  <Transaction_Approved>true</Transaction_Approved>\n  <EXact_Resp_Code>00</EXact_Resp_Code>\n  <EXact_Message>Transaction Normal</EXact_Message>\n  <Bank_Resp_Code>100</Bank_Resp_Code>\n  <Bank_Message>Approved</Bank_Message>\n  <Bank_Resp_Code_2></Bank_Resp_Code_2>\n  <SequenceNo>000028</SequenceNo>\n  <AVS></AVS>\n  <CVV2>I</CVV2>\n  <Retrieval_Ref_No>2553092</Retrieval_Ref_No>\n  <CAVV_Response></CAVV_Response>\n  <Currency>USD</Currency>\n  <AmountRequested></AmountRequested>\n  <PartialRedemption>false</PartialRedemption>\n  <MerchantName>Narola DEMO0714</MerchantName>\n  <MerchantAddress>Adajan</MerchantAddress>\n  <MerchantCity>Surat</MerchantCity>\n  <MerchantProvince></MerchantProvince>\n  <MerchantCountry>India</MerchantCountry>\n  <MerchantPostal>395009</MerchantPostal>\n  <MerchantURL></MerchantURL>\n  <TransarmorToken></TransarmorToken>\n  <CardType>Discover</CardType>\n  <CurrentBalance></CurrentBalance>\n  <PreviousBalance></PreviousBalance>\n  <EAN></EAN>\n  <CardCost></CardCost>\n  <VirtualCard>false</VirtualCard>\n  <CTR>========== TRANSACTION RECORD ==========\nNarola DEMO0714\nAdajan\nSurat 395009\nIndia\n\n\nTYPE: Completion\n\nACCT: Discover               $ 50.00 USD\n\nCARDHOLDER NAME : Aakanksha Sharma\nCARD NUMBER     : ############1943\nDATE/TIME       : 22 Feb 16 06:51:34\nREFERENCE #     : 03 000028 M\nAUTHOR. #       : ET114463\nTRANS. REF.     : \n\n    Approved - Thank You 100\n\n\nPlease retain this copy for your records.\n\nCardholder will pay above amount to\ncard issuer pursuant to cardholder\nagreement.\n========================================</CTR>\n</TransactionResult>\n"
+read 2789 bytes
+Conn close

@@ -2,16 +2,21 @@ class SessionsController < ApplicationController
   include CreateCart
   before_action :cart_assign
   def new
+    if session[:admin_id] == nil
+      redirect_to '/'
+    else
+      redirect_to '/administrators/welcome'
+    end
   end
 
   def create
-    admin = Administrator.find_by_username(params[:username])
-    if admin && admin.authenticate(params[:password])
-      session[:admin_id] = admin.id
-      redirect_to '/administrators/welcome'
-    else
-      redirect_to '/login'
-    end
+      admin = Administrator.find_by_username(params[:username])
+      if admin && admin.authenticate(params[:password])
+        session[:admin_id] = admin.id
+        redirect_to '/administrators/welcome'
+      else
+        redirect_to '/login'
+      end
   end
 
   def destroy
