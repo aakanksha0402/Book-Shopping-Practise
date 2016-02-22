@@ -24,18 +24,23 @@ before_action :set_order, only: [:show, :edit, :update, :destroy]
   def create
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
-    respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        OrderNotifier.received(@order).deliver
-        format.html { redirect_to store_index_path, notice: t('order.sent_email') }
-        format.json { render action: 'show', status: :created, location: @order }
+        if @order.pay_type == 'Credit Card'
+          session[:email] = @order.email
+          redirect_to new_payment_path
+        else
+          OrderNotifier.received(@order).deliver
+          respond_to do |format|
+            format.html { redirect_to store_index_path, notice: t('order.sent_email') }
+            format.json { render action: 'show', status: :created, location: @order }
+          end
+        end
       else
         format.html { render action: 'new' }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
-    end
   end
 
   def update

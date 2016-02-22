@@ -1,5 +1,6 @@
 class AdministratorsController < ApplicationController
   before_filter :authorize
+  before_filter :cache_chck
   before_action :set_administrator, only: [:show, :edit, :update, :destroy]
   include CreateCart
   before_action :cart_assign
@@ -20,7 +21,6 @@ class AdministratorsController < ApplicationController
 
   def create
     @administrator = Administrator.new(administrator_params)
-
     respond_to do |format|
       if @administrator.save
         format.html { redirect_to @administrator, notice: 'Administrator was successfully created.' }
@@ -64,4 +64,6 @@ class AdministratorsController < ApplicationController
     def administrator_params
       params.require(:administrator).permit(:name, :username, :password, :password_confirmation)
     end
+
+
 end

@@ -1,4 +1,5 @@
 BookShopping::Application.routes.draw do
+resources :payments, only: [:new, :create, :index]
   get '/administrators/welcome' => 'administrators#welcome'
   resources :administrators
 
